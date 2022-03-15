@@ -73,6 +73,8 @@ img {
 .logo:hover {
   color: var(--accent-color);
   font-size: 26px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header {
@@ -156,11 +158,15 @@ img {
 .site-nav-contacts .link-lists:hover {
   font-size: 14px;
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav-contacts .link-lists:focus {
   font-size: 14px;
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav.current {
@@ -192,12 +198,16 @@ img {
 .contacts-header .contacts-icon:hover,
 .contacts-header .contacts-icon:focus {
   fill: var(--accent-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-header:hover,
 .contacts-header:focus {
   fill: var(--accent-color);
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero {
@@ -352,6 +362,22 @@ img {
   margin-right: 0;
 }
 
+.thumb {
+  position: relative;
+}
+
+.grey-fon {
+  position: static;
+}
+
+.thumb > .label {
+  position: absolute;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px 83px;
+  width: 370px;
+}
+
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -381,6 +407,8 @@ img {
 .social-icons-list:hover,
 .social-icons-list:focus {
   background-color: var(--accent-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-list:hover .icon-team,
@@ -624,34 +652,52 @@ img {
 .icon-team-footer:hover,
 .icon-team-footer:focus {
   fill: var(--white-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-footer:hover,
 .social-icons-footer:focus {
   background-color: var(--accent-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address:hover {
   color: var(--accent-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-add:hover {
   color: var(--accent-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phone-number:hover {
   color: var(--accent-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address:focus {
   color: var(--accent-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-add:focus {
   color: var(--accent-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phone-number:focus {
   color: var(--accent-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-add:focus .active {
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active {
@@ -713,6 +759,8 @@ img {
 .filter-btn:focus {
   color: var(--white-text-color);
   background-color: var(--accent-hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-title {
@@ -728,6 +776,8 @@ img {
 .portfolio-title:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item {
@@ -766,4 +816,6 @@ a {
 .logo-footer:hover {
   color: var(--accent-color);
   font-size: 26px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
