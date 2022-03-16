@@ -146,6 +146,7 @@ img {
 }
 
 .link-lists {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -153,6 +154,23 @@ img {
   color: #212121;
   padding: 32px 0;
   display: block;
+}
+
+.link-lists::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 78px;
+  height: 4px;
+  top: 76px;
+
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.link-lists:active::after {
 }
 
 .site-nav-contacts .link-lists:hover {
