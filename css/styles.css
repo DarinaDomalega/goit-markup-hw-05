@@ -107,6 +107,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: auto;
 }
 
 .logo {
@@ -123,14 +124,6 @@ img {
 
 .site-nav-contacts .navs:last-child {
   margin-right: 0;
-}
-
-.first {
-  margin-left: 330px;
-}
-
-.second {
-  margin-left: 50px;
 }
 
 .site-nav-contacts {
@@ -232,18 +225,25 @@ img {
 }
 
 .contacts-header {
+  display: flex;
+  padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1x;
   letter-spacing: 0.02em;
   color: #757575;
-  display: flex;
   align-items: center;
   white-space: nowrap;
+  transition: color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.first {
+  margin-right: 30px;
 }
 
 .contacts-icon {
   margin-right: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-header .contacts-icon:hover,
@@ -284,9 +284,14 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-title {
+  width: 696px;
 }
 .modal-button {
   font-weight: 700;
@@ -295,6 +300,8 @@ img {
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 0px;
+
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
@@ -423,7 +430,7 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .about {
@@ -476,14 +483,17 @@ img {
   text-transform: uppercase;
   white-space: nowrap;
   color: #ffffff;
-  padding: 27px 83px;
 }
 
 .thumb > .label {
+  display: flex;
   position: absolute;
   bottom: 0;
   background: rgba(47, 48, 58, 0.8);
   width: 370px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
 }
 
 .team {
@@ -500,6 +510,7 @@ img {
 /* .text */
 
 .team-workers-list {
+  width: 270px;
   background-color: #ffffff;
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -545,9 +556,12 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-team .team-workers-list:last-child {
+.team-workers-list:last-child {
   margin-right: 0;
 }
 
@@ -565,7 +579,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .list-job {
@@ -577,7 +591,7 @@ img {
   letter-spacing: 0.03em;
 
   color: #757575;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /* OUR CLIENTS */
@@ -615,7 +629,6 @@ img {
 
 .companies {
   display: flex;
-  justify-content: space-between;
 }
 
 .links-companies {
@@ -624,8 +637,10 @@ img {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-
-  padding: 16px 32px;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  transition: border-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* FOOTTER */
@@ -702,6 +717,7 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-add {
   font-style: normal;
@@ -709,6 +725,7 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phone-number {
   font-style: normal;
@@ -716,6 +733,7 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-link {
@@ -732,15 +750,15 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .cards {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .social-icons-footer {
@@ -751,6 +769,7 @@ img {
   height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-team-footer {
