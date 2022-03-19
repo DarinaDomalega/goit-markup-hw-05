@@ -401,6 +401,7 @@ img {
 .img-section {
   padding: 20px 24px;
   align-items: center;
+  border: 1px solid #eeeeee;
 }
 
 .text-img {
@@ -905,6 +906,14 @@ img {
   display: block;
   transform: translateY(-100%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-title:focus .overley-description {
+  display: block;
+  transform: translateY(-100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio {
@@ -926,6 +935,13 @@ img {
   color: #212121;
   padding: 6px 22px;
   border-radius: 4px;
+  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current {
+  background-color: #188ce8;
+  color: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -944,9 +960,11 @@ img {
   letter-spacing: 0.06em;
   color: var(--main-text-color);
   background-color: #ffffff;
+  transition: overlay, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-title:hover {
+.portfolio-title:hover,
+.portfolio-title:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition-duration: 250ms;
