@@ -875,6 +875,7 @@ img {
 
 .portfolio-title:hover .product-thumb::before {
   transform: translateY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-btn:last-child {
@@ -900,6 +901,7 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: #188ce8;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-title:hover .overley-description {
@@ -913,7 +915,7 @@ img {
 .portfolio-title:focus .overley-description {
   display: block;
   transform: translateY(-100%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio {
