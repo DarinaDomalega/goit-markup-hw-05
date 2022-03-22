@@ -904,6 +904,9 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.aboutt {
+}
+
 .portfolio-title:hover .overley-description {
   display: block;
   transform: translateY(-100%);
